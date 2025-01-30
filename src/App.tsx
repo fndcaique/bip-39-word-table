@@ -19,9 +19,9 @@ function App() {
 			<table>
 				<thead>
 					<tr>
-						<th style={{ minWidth: "120px" }}>INDEX</th>
-						<th style={{ minWidth: "120px", textAlign: "left" }}>WORD</th>
-						<th style={{ minWidth: "120px" }}>BIN INDEX</th>
+						<th>IDX</th>
+						<th style={{ textAlign: "left" }}>WORD</th>
+						<th>BIN</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -39,7 +39,7 @@ function App() {
 								{binValueFormatter(word.binIndex)
 									.split("")
 									.map((char, index) => (
-										<div key={`${word}-bin-${index}`} style={{ width: "1rem" }}>
+										<div key={`${word}-bin-${index}`} style={{ width: "0.75rem" }}>
 											{char}
 										</div>
 									))}
